@@ -1,0 +1,6 @@
+@Mission10FullStack_HostAddress = http://localhost:5197
+
+GET {{Mission10FullStack_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
