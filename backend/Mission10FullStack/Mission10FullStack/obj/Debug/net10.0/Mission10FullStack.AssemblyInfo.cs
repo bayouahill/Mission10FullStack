@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Mission10FullStack")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+395e7eed4db5ce6065da429059efb3e8ea355cde")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f7960a545f7795c61729153cf82b4b99864fae13")]
 [assembly: System.Reflection.AssemblyProductAttribute("Mission10FullStack")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Mission10FullStack")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

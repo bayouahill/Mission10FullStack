@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Bowler } from './types/bowler';
+import type { Bowler } from './types/bowler';
 
 function BowlingList() {
     const [bowlers, setBowlers] = useState<Bowler[]>([]);
