@@ -16,13 +16,27 @@ namespace Mission10FullStack.Controllers
         }
 
         [HttpGet(Name = "GetBowlingData")]
-        public IEnumerable<string> Get()
+        public IActionResult Get()
         {
-            
-            return new string[]
-            {
-                "Bowling", "Controller"
-            };
+            var bowlers = BowlingContext.Bowlers
+                .Where(b => b.Team!.TeamName == "Marlins" || b.Team.TeamName == "Sharks")
+                .Select(b => new
+                {
+                    b.BowlerId,
+                    b.BowlerFirstName,
+                    b.BowlerMiddleInit,
+                    b.BowlerLastName,
+                    b.BowlerAddress,
+                    b.BowlerCity,
+                    b.BowlerState,
+                    b.BowlerZip,
+                    b.BowlerPhoneNumber,
+                    b.TeamId,
+                    TeamName = b.Team!.TeamName
+                })
+                .ToList();
+
+            return Ok(bowlers);
         }
     }
 }

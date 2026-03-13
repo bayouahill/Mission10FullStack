@@ -1,0 +1,13 @@
+# Visual Studio
+.vs/
+*.user
+
+# Build output
+bin/
+obj/
+
+# SQLite database
+*.sqlite
+
+# Node
+node_modules/
